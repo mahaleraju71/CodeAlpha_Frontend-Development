@@ -1,0 +1,74 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e3eb;
+}
+.container {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: hwb(0 4% 94%);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display {
+  height: 100px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none;
+
+}
+button {
+    background: #333333;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 70%;
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+  }
+  
+  button:active,
+  button:focus {
+    filter: brightness(120%);
+  }
+  
+  .calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+  }
+  
+  .key-zero {
+    grid-column: span 2;
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  .key-operate {
+    background: #ff9501;
+  }
+  
+  .key-others {
+    background: #a6a6a6;
+    color: #000000;
+  }
+
